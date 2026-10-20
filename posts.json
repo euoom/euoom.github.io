@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "2026-week-41-agentic-hackathon",
+    "route": "2026-week-41-agentic-hackathon",
+    "title": "2026-41주차 | AI 에이전트에게 해커톤 제안서 제작을 맡겨봤다",
+    "date": "2026-10-17",
+    "tags": [
+      "주간회고",
+      "AI Agent",
+      "해커톤"
+    ],
+    "summary": "2026년 41주차(10월 5일~11일). 개발과 자료 조사에 익숙했던 AI 연구원이 에이전트에게 해커톤 제안서 제작을 맡겨본 기록. 제출은 마쳤지만, 완성도까지 스스로 책임지는 풀 에이전트는 아직 아니었다.",
+    "icon": "🤖",
+    "featured": false,
+    "project_url": ""
+  },
+  {
+    "slug": "2026-week-40-jev-business-reflection",
+    "route": "2026-week-40-jev-business-reflection",
+    "title": "2026-40주차 | Jev를 계기로 돌아본 나의 사업적 시각",
+    "date": "2026-10-04",
+    "tags": [
+      "주간회고",
+      "AI",
+      "Jev",
+      "사업"
+    ],
+    "summary": "Jev는 기술적으로 아주 새롭지는 않았지만 성능은 인상적이었다. 그보다 놀라웠던 건 나라면 사업화할 생각조차 못 했을 아이디어를 누군가는 시장에 내놓고 큰 관심을 얻었다는 점이다.",
+    "icon": "💭",
+    "featured": false,
+    "project_url": ""
+  },
+  {
+    "slug": "2026-week-39-multiagent-reflections",
+    "route": "2026-week-39-multiagent-reflections",
+    "title": "2026년 38~39주차 | 모델이 막혔을 때, 다른 모델이 도와줄 수 있을까",
+    "date": "2026-09-27",
+    "tags": [
+      "주간회고",
+      "AI Agent",
+      "멀티에이전트"
+    ],
+    "summary": "MCP 도구를 추가하다가 /reload 이후에도 목록이 갱신되지 않는 문제를 만났다. 모델마다 달랐던 디버깅 결과를 보며, 사람이 매번 개입하지 않아도 에이전트끼리 협력해 문제를 해결할 방법을 고민했다.",
+    "icon": "🤖",
+    "featured": false,
+    "project_url": ""
+  }
+]

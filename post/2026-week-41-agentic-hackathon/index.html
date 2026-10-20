@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2026년 41주차(10월 5일~11일). 개발과 자료 조사에 익숙했던 AI 연구원이 에이전트에게 해커톤 제안서 제작을 맡겨본 기록. 제출은 마쳤지만, 완성도까지 스스로 책임지는 풀 에이전트는 아직 아니었다." />
+  <meta name="author" content="euoom" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="2026-41주차 | AI 에이전트에게 해커톤 제안서 제작을 맡겨봤다" />
+  <meta property="og:description" content="2026년 41주차(10월 5일~11일). 개발과 자료 조사에 익숙했던 AI 연구원이 에이전트에게 해커톤 제안서 제작을 맡겨본 기록. 제출은 마쳤지만, 완성도까지 스스로 책임지는 풀 에이전트는 아직 아니었다." />
+  <meta property="og:url" content="https://euoom.github.io/post/2026-week-41-agentic-hackathon/" />
+  <meta property="article:published_time" content="2026-10-17" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://euoom.github.io/post/2026-week-41-agentic-hackathon/" />
+  <link rel="alternate" type="application/rss+xml" title="euoom — 블로그" href="https://euoom.github.io/feed.xml" />
+  <title>2026-41주차 | AI 에이전트에게 해커톤 제안서 제작을 맡겨봤다 — euoom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
+  <link rel="stylesheet" href="/styles.css?v=3" />
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script defer src="/post.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">e.</span><span>euoom</span></a><nav class="site-nav" aria-label="주요 메뉴"><a href="/" class="nav-link">블로그</a><a href="https://github.com/euoom" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a><button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 변경">☀</button></nav></div></header>
+  <main id="main" class="shell"><section class="post-detail active"><a class="back-link" href="/">← 블로그로 돌아가기</a><article><header><p class="article-kicker">🤖 · 주간회고 · AI Agent · 해커톤</p><h1 class="article-title">2026-41주차 | AI 에이전트에게 해커톤 제안서 제작을 맡겨봤다</h1><p class="article-summary">2026년 41주차(10월 5일~11일). 개발과 자료 조사에 익숙했던 AI 연구원이 에이전트에게 해커톤 제안서 제작을 맡겨본 기록. 제출은 마쳤지만, 완성도까지 스스로 책임지는 풀 에이전트는 아직 아니었다.</p><div class="article-meta"><time datetime="2026-10-17">2026-10-17</time></div></header><div class="markdown-body"><p>AI 연구원으로 일하면서 여러 업무에 AI 에이전트를 활용해 왔다. 하지만 그렇다고 내가 에이전트를 잘 활용하고 있느냐고 묻는다면, 아직은 자신 있게 그렇다고 답하기 어렵다.</p>
+<p>내가 에이전트의 능력을 충분히 끌어내지 못하는 것일 수도 있고, 반대로 지금의 에이전트가 아직 잘하지 못하는 영역이 있는 것일 수도 있다. 아마 두 가지가 섞여 있을 것이다.</p>
+<p>지금까지는 주로 개발이나 자료 조사에 에이전트를 활용했다. 이 영역에서는 이미 꽤 많은 도움을 받고 있고, 작업을 맡기는 방식에도 어느 정도 익숙해졌다. 그런데 에이전트로 PPT를 만들고 유튜브 영상까지 제작하는 사례들을 보면서 새로운 의문이 생겼다. <strong>PPT나 문서 작성처럼 결과물의 구성과 시각적 완성도까지 중요한 작업에서도 에이전트를 믿고 맡길 수 있을까?</strong></p>
+<p>마침 에이전트로 해볼 만한 일을 찾던 중 <strong>고용24 국민참여 AI 고용서비스 발굴 온라인 해커톤</strong>을 발견했다. 아이디어를 찾고, 기존 서비스를 조사하고, 내용을 구성한 다음, 최종적으로 PDF까지 만들어야 하는 일이었다. 평소 익숙했던 개발이나 자료 조사와는 조금 다른 작업이니, 에이전트가 어디까지 해낼 수 있는지 확인하기에 적절해 보였다.</p>
+<p>이 글은 그렇게 시작한 해커톤 제안서 제작 과정과, 그 과정에서 느낀 에이전트 활용의 어려움에 관한 기록이다.</p>
+<h2>에이전트에게 맡기고 싶었던 것</h2>
+<p>목표는 단순히 AI가 써준 문장을 복사해 제안서를 완성하는 것이 아니었다. 주제와 방향을 이야기하면 에이전트가 필요한 자료를 조사하고, 기획안을 다듬고, 페이지를 구성하고, 실제 문서를 만들어 <strong>결과를 확인하고 고치는 과정까지</strong> 이어가기를 기대했다.</p>
+<p>사람이 매번 파일을 열어 위치를 조정하거나, 출력된 PDF의 오류를 일일이 찾아서 지적하는 방식이라면 기존의 AI 보조 작성과 크게 다르지 않다. 내가 궁금했던 것은 어디까지 사람의 손을 덜 수 있는가였다.</p>
+<h2>아이디어도 한 번에 정해지지는 않았다</h2>
+<p>10월 4일에는 고용24의 기존 AI 서비스와 공개 OPEN-API를 조사하면서 첫 번째 초안을 잡았다. <strong>v1의 이름은 JobGap</strong>이었다. 채용공고를 출발점으로 요구 역량과 구직자의 보유 역량을 비교하고, 부족한 역량을 훈련과 다음 행동으로 연결하는 아이디어였다.</p>
+<p>그런데 생각할수록 고용서비스의 대상이 꼭 구직자에만 한정될 필요는 없었다. <strong>v2에서는 구직자뿐 아니라 고용주와 정책 입안자까지 활용할 수 있는 에이전트</strong>를 기획해보려고 했다. 구직자에게는 취업 준비를 돕고, 고용주에게는 필요한 인재와 역량을 파악하도록 지원하고, 정책 입안자에게는 고용 현황과 수요를 이해하는 데 도움을 주는, 조금 더 넓은 그림이었다. 하지만 제안서는 <strong>10페이지 제한</strong>이 있었다. 세 주체를 모두 담으려다 보니 각각의 이야기가 얕아질 것 같았고, 결국 기초적인 문제와 핵심 기능에 집중하는 편이 낫겠다고 판단했다.</p>
+<p>그렇게 v3에서는 ‘<strong>내일이 — 기억하고 실행하는 AI 취업동행 에이전트</strong>’라는 이름으로 정리했다. 일회성 추천보다 사용자의 취업 목표와 준비 이력을 기억하고 다음 행동으로 이어주는 방향으로 범위를 좁혔다.</p>
+<p>사실 이 버전도 내가 처음 상상했던 에이전트의 최종 형태는 아니었다. <strong>공개 OPEN-API로 접근할 수 있는 한정된 영역에서만 움직이는, 제약이 있는 에이전트</strong>라는 점이 조금 아쉬웠다. 다만 실제로 <strong>MVP를 구현한다면 범위가 명확한 만큼 개발 난이도는 낮아질 수 있겠다</strong>는 생각도 들었다. 아쉬움은 남았지만, 처음부터 모든 것을 하려 하기보다는 작게 시작해 검증하기에는 오히려 괜찮은 선택일 수도 있었다.</p>
+<p>이 과정에서 에이전트는 기존 기능 조사, 데이터 연결 가능성 검토, 제안 내용 구성, 페이지별 설명과 시각 자료 설계에 활용됐다. 실제 API 접근이 제한된 부분은 공개 명세를 바탕으로 설명하고, 검증되지 않은 결과를 실제 성능처럼 주장하지 않는 방향으로 정리했다.</p>
+<p>아이디어를 발전시키는 일 자체는 꽤 유용했다. 막연한 생각을 여러 관점에서 검토하고, 제출 문서에 필요한 형태로 구조화하는 데 도움을 받았다.</p>
+<h2>제안서를 만드는 방식도 세 번 바뀌었다</h2>
+<p>아이디어만 v1, v2, v3로 바뀐 것은 아니었다. 에이전트에게 제안서를 만들게 하는 방법도 몇 번이나 바꿔봤다. 처음부터 특정 도구를 정해놓고 시작한 것은 아니었다. 직접 해보니 각 방식마다 잘되는 부분과 막히는 부분이 달랐다.</p>
+<h3>첫 번째 — HTML로 만들고 PDF로 변환하기</h3>
+<p>처음에는 <strong>HTML/CSS로 페이지를 구성한 뒤 PDF로 변환하는 방식</strong>을 택했다. 에이전트에게 문서의 구성이나 디자인을 말로 설명하면 코드로 반영할 수 있었고, 레이아웃을 조정하거나 문장을 고쳐서 다시 출력하는 과정도 비교적 수월했다. 결과물의 시각적인 느낌도 생각보다 괜찮았다.</p>
+<p>하지만 이 방식에는 분명한 한계가 있었다. PDF로 변환하고 나면 <strong>사람이 문서 안의 개별 요소를 직접 잡아서 고치기가 어렵다.</strong> 작은 수정도 원본 HTML을 찾아 바꾸고 다시 출력해야 했다. 무엇보다 파일이 생성됐다는 사실만으로 글자가 넘치거나 겹치지 않는지, 페이지가 잘리지 않았는지까지 보장되지는 않았다. 에이전트가 출력된 화면을 보고 스스로 검수하는 과정이 필요했다.</p>
+<h3>두 번째 — Figma와 MCP로 작업하기</h3>
+<p>그래서 다음에는 <strong>Figma와 MCP를 연결해 시각적인 편집 환경에서 작업하는 방식</strong>을 시도했다. 문서를 단순한 출력물이 아니라 편집 가능한 디자인으로 다룰 수 있다는 점이 매력적이었다. 사람이 눈으로 배치를 확인하면서 수정하고, 에이전트도 그 작업에 참여할 수 있다면 앞선 방식의 불편함을 줄일 수 있을 것 같았다.</p>
+<p>다만 실제로는 MCP 사용량 제한과 비용 문제가 걸렸다. 작업이 외부 서비스에 의존한다는 점도 마음에 걸렸다. 에이전트가 작업을 이어갈 때 <strong>어떤 파일과 화면이 현재 기준인지 안정적으로 파악하고, 사람이 수정한 내용을 그대로 이어받는 일</strong> 역시 생각만큼 간단하지 않았다. 시각 편집기를 붙인다고 해서 곧바로 자율적인 문서 제작 과정이 완성되는 것은 아니었다.</p>
+<h3>세 번째 — PPT로 만들고 PDF로 제출하기</h3>
+<p>마지막으로는 <strong>PPTX를 만들고 PDF로 출력하는 방식</strong>으로 정리했다. 발표 자료 형식은 익숙하고, 사람이 나중에 슬라이드의 텍스트나 개별 요소를 직접 수정하기도 좋다. 최종 제출용 PDF와 편집 가능한 원본을 함께 남길 수 있다는 점도 장점이었다.</p>
+<p>그렇다고 제작 과정이 쉬워진 것은 아니었다. 에이전트가 슬라이드마다 글자 크기와 여백, 요소 간 간격을 일관되게 맞추는 일은 여전히 어려웠다. 폰트가 바뀌거나 내용이 잘리는 문제도 최종 출력물을 열어봐야 알 수 있었다. 특히 10월 12일에는 <strong>기존 채팅 세션이 길어져 새 채팅 세션에서 작업을 이어가려던 과정</strong>에서 문제가 생겼다. 새 세션의 에이전트가 이전 작업의 맥락과 최신 파일 상태를 제대로 파악하지 못해 <strong>이전 버전의 HTML을 바탕으로 오래된 내용이 다시 출력된 것</strong>이다. 결국 어떤 파일이 최신 원본인지 다시 확인하고, 실제 제출할 PDF에 최신 내용이 반영됐는지 직접 검증해야 했다.</p>
+<h3>도구를 바꿔도 남은 문제</h3>
+<p>세 가지 방식은 저마다 장단점이 있었다. <strong>HTML은 자연어 수정과 출력이 편했고, Figma는 준실시간 편집과 공유에 강점이 있었으며, PPT는 사람이 이어서 고치기 좋았다.</strong> 하지만 어느 쪽이든 에이전트가 결과물을 끝까지 책임지고 완성도를 보장해주지는 못했다.</p>
+<p>결국 어려웠던 것은 단순한 파일 생성이 아니라 그다음 단계였다. <strong>에이전트가 지금 무엇을 수정하고 있는지 알고, 실제 렌더링 결과를 다시 보면서 오류를 찾아 고칠 수 있는가.</strong> 도구를 세 번 바꿔보면서 오히려 그 질문이 더 선명해졌다.</p>
+<h2>그래도 제출은 했다</h2>
+<p>최종적으로 <strong>‘내일이’ 10페이지 제안서 PDF와 PPTX</strong>를 완성했다. Google Form에 필요한 소개와 데이터 활용 내용을 정리하고 파일을 첨부했으며, 10월 13일에는 필수 동의와 최종 제출을 직접 마쳤다.</p>
+<p>그러니 결과가 실패였다고 말하기는 어렵다. 처음에는 아이디어도 정해지지 않았지만, 조사와 기획을 거쳐 실제 제출할 수 있는 문서까지 만들었다. 다만 <strong>내가 처음 기대했던 ‘풀 에이전트가 알아서 완성도 높은 결과물을 만들어주는 경험’과는 거리가 있었다.</strong></p>
+<p>에이전트는 많은 단계를 수행했지만, 결과물의 마지막 품질을 보증하는 역할까지 자연스럽게 이어지지는 않았다. 사람이 오류를 발견해 알려주는 순간이 여러 번 필요했다.</p>
+<h3>내가 기대한 에이전트의 수준과 실제 결과물</h3>
+<p>내가 기대했던 제안서의 모습과 실제로 에이전트가 만든 결과물을 개요 페이지와 상세 페이지별로 나란히 비교해 보았다.</p>
+<table class="slide-comparison"><colgroup><col class="comparison-label"><col class="comparison-slide"><col class="comparison-slide"></colgroup>
+<thead>
+<tr>
+<th style="text-align:left">구분</th>
+<th style="text-align:left">내가 기대한 에이전트의 수준</th>
+<th style="text-align:left">만들어진 결과물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>개요</strong></td>
+<td style="text-align:left"><img src="/images/hackathon-overview.png" alt="내가 기대한 제안서 개요 페이지" /></td>
+<td style="text-align:left"><img src="/images/hackathon-transition.png" alt="에이전트가 만든 내일이 제안서 개요 페이지" /></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>상세</strong></td>
+<td style="text-align:left"><img src="/images/hackathon-detail-1.png" alt="내가 기대한 제안서 상세 페이지 일부" /></td>
+<td style="text-align:left"><img src="/images/hackathon-detail-2.png" alt="에이전트가 만든 내일이 제안서 상세 페이지 일부" /></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>특징</strong></td>
+<td style="text-align:left">한국 공공기관 제안서 등에서는 제한된 페이지 안에 배경과 근거, 핵심 정보와 도식을 밀도 높게 압축하는 구성을 좋은 결과물로 평가하기도 한다. 내가 기대한 것도 이런 <strong>정보 밀도가 높은 제안서</strong>였다.</td>
+<td style="text-align:left">에이전트가 만든 슬라이드는 상대적으로 여백이 넓고 한 장에 담긴 정보가 적어, 상세한 서면 제안서보다는 <strong>유튜브 영상이나 발표용 슬라이드</strong>에 가까웠다. 참고 샘플을 제공하거나 별도의 하네스를 구축해 구성 규칙을 구체적으로 지시했다면 달라졌을 수 있다. 하지만 이번처럼 간단한 프롬프트만으로는 에이전트가 스스로 고밀도 제안서 구성을 만들어내지 못했다.</td>
+</tr>
+</tbody>
+</table>
+<p>결과물을 완성해 제출하기는 했지만, 실제 화면을 확인하고 수정이 필요한 부분을 판단하는 일에는 여전히 사람의 개입이 필요했다.</p>
+<h2>내가 원했던 것은 어떤 작업 환경이었을까</h2>
+<p>이번 일을 하면서 내가 원했던 경험이 조금 더 구체적으로 보였다. 단순히 에이전트에게 명령해서 파일을 생성하는 것이 아니라, <strong>사람과 에이전트가 같은 화면을 보면서 결과물을 함께 다듬는 환경</strong>이었다.</p>
+<p>가장 가까운 예로 떠오른 것은 <strong>Orca에서 브라우저를 띄워 작업하는 방식</strong>이었다. 브라우저 안의 각 UI 요소에 접근해 코멘트를 남기거나, 화면을 스크린샷으로 찍어 에이전트와 공유하면서 수정 방향을 이야기할 수 있는 환경. 내가 기대했던 것은 이런 식으로 실제 화면을 중심에 놓고 사람과 에이전트가 작업을 이어가는 경험이었던 것 같다. 이번 제안서 제작에는 이 방식을 제대로 활용하지 못했지만, 다음에 기회가 된다면 직접 써보고 싶다.</p>
+<p><img src="/images/orca-collaborative-workspace.png" alt="Orca에서 브라우저 화면을 보며 에이전트와 함께 작업하는 환경" /></p>
+<p><em>Orca 브라우저에서 스크린샷의 그리기 기능을 이용해 수정 요청을 남기는 화면.</em></p>
+<p><img src="/images/orca-ui-element-comment.png" alt="Orca 브라우저에서 UI 요소를 선택하고 에이전트에게 변경 사항을 코멘트하는 화면" /></p>
+<p><em>Orca 브라우저에서 UI 요소를 선택해 변경 요청을 남기는 화면.</em></p>
+<p>최근 소프트웨어 도구들이 에이전트와 연동되는 방식은 대체로 <strong>전용 MCP, CLI, 컴퓨터 유즈(Computer Use)</strong> 등으로 나뉜다. 각각 장단점이 있다. MCP나 CLI는 도구의 기능을 명시적으로 호출하기 좋지만, 사람이 보고 있는 화면의 맥락을 그대로 공유하는 것과는 거리가 있을 수 있다. 컴퓨터 유즈는 실제 화면을 조작할 수 있는 대신 작업의 정확성과 안정적인 반복 실행이 과제로 남는다. 그런 점에서 <strong>화면의 UI 요소를 직접 짚고 코멘트나 스크린샷으로 맥락을 전달하는 Orca의 방식</strong>이 지금 내가 원하는 작업 경험에 그나마 가까워 보였다.</p>
+<p>Orca는 정말 잘 만든 도구라고 생각한다. 다만 아직 메인 브라우저로 사용하지 않는 데에는 두 가지 이유가 있다. 첫째, <strong>내가 직접 커스터마이징한 에이전트 게이트웨이와 호환되지 않는다.</strong> 이미 사용하고 있는 작업 환경과 자연스럽게 연결할 수 없다는 점이 아쉽다. 둘째, <strong>개발 작업이 아닌 크롤링 같은 작업에서는 에이전트의 접근으로 판단되어 차단되는 사례가 늘어나고 있다.</strong> 브라우저 안에서 에이전트와 함께 작업하는 경험이 좋아도, 실제 웹사이트를 대상으로 하는 모든 작업에 안정적으로 활용할 수 있는 것은 아니었다.</p>
+<p>그래서 모든 작업을 Orca에 의존하기보다는, <strong>Orca의 화면 중심 피드백 경험을 내가 사용하는 로컬 환경에서 어느 정도 재현할 수 있을까?</strong> 하는 궁금증이 생겼다.</p>
+<p>이 생각에서 출발한 것이 다음에 시도해보려는 <strong>비주얼 에디터 프로젝트</strong>다. HTML/CSS 원본과 실제 브라우저 화면을 연결하고, 사람이 UI 요소를 선택하거나 코멘트를 남기면 에이전트가 그 맥락을 이해해 수정하는 방식이다. 수정 뒤에는 렌더링된 화면을 다시 확인하고, 필요하면 고치는 과정을 반복하고 싶다.</p>
+<p><strong>현재 작업 상태 관찰 → 화면에서 피드백 공유 → 계획 → 편집 → 실제 렌더링 → 시각 검수 → 수정 → 재검증.</strong></p>
+<p>결국 내가 원했던 풀 에이전트 경험은 파일을 대신 만들어주는 것보다, 이 과정에서 사람과 에이전트가 같은 작업 상태를 공유하며 끝까지 결과물을 다듬는 데 더 가까웠다. 해커톤 제안서는 제출했지만, 다음에 실험해보고 싶은 문제는 오히려 더 선명해졌다.</p>
+<h2>이번 주에 남은 생각</h2>
+<p>이번 실험에서 에이전트는 아이디어 조사부터 제안서 구성, 최종 파일 제작까지 많은 일을 도와줬다. 실제로 제출까지 마쳤으니 분명 의미 있는 결과였다. 다만 <strong>제출할 수 있는 문서를 만드는 것과, 내가 기대한 완성도에 도달하는 것은 다른 문제</strong>였다.</p>
+<p>처음에는 에이전트에게 작업을 맡기면 어느 정도까지 알아서 해낼 수 있을지가 궁금했다. 막상 해보니 결과물의 품질은 에이전트의 능력만으로 결정되지 않았다. 내가 원하는 문서의 기준을 얼마나 구체적으로 전달했는지, 참고할 만한 예시를 제공했는지, 에이전트가 실제 화면을 확인하고 수정할 수 있는 환경을 갖췄는지도 중요했다. 이번 결과가 아쉬웠다고 해서 그것을 전부 에이전트의 한계라고 단정할 수는 없을 것 같다.</p>
+<p>그렇다고 사람이 매번 결과물을 열어보고 문제를 찾아 알려줘야 하는 방식에 만족하고 싶지는 않다. <strong>사람과 에이전트가 같은 결과물을 보며 피드백을 주고받고, 수정한 내용을 다시 확인하는 과정</strong>까지 자연스럽게 이어졌으면 한다. 앞서 떠올린 비주얼 에디터도 그런 작업 환경을 직접 만들어보고 싶다는 생각에서 출발했다.</p>
+<p>이번 경험만으로 에이전트가 문서 제작을 어디까지 자율적으로 해낼 수 있는지 단정할 수는 없다. 참고 샘플과 구체적인 구성 규칙을 충분히 제공하지 않았다는 점도 결과에 영향을 줬을 것이다. 다만 이번 작업에서는 <strong>파일을 만드는 것보다, 만들어진 결과를 직접 보고 검수하고 고치는 과정</strong>이 더 큰 과제로 남았다.</p>
+<p>다음에는 비주얼 에디터를 통해 한 가지부터 확인해 보고 싶다. <strong>사람이 화면에서 수정할 요소를 짚어 주면, 에이전트가 그 맥락을 이어받아 수정하고 실제 렌더링 결과까지 다시 확인할 수 있을까?</strong> 해커톤에서는 제출까지 마쳤다. 이제는 그 과정에서 반복됐던 사람의 확인과 재지시를 얼마나 줄일 수 있는지 실험해 볼 차례다.</p>
+</div></article></section></main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© 2026 euoom</p></div></footer>
+</body>
+</html>

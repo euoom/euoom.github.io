@@ -1,66 +1,103 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ETF Portfolio Profiler는 ETF 운용사의 포트폴리오 변화와 종목별 노출 흐름을 분석하는 서비스입니다."
-    />
-    <title>ETF Portfolio Profiler</title>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3049332347805104"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="description" content="euoom의 블로그. 특별했던 순간은 오래 간직하고, 평범했던 날에서는 미처 발견하지 못한 의미를 찾아봅니다." />
+    <meta name="author" content="euoom" />
+    <meta name="theme-color" content="#0b0d10" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="euoom — Blog" />
+    <meta property="og:description" content="특별했던 순간은 오래 간직하고, 평범했던 날에서는 미처 발견하지 못한 의미를 찾아봅니다. 개발과 일상 속에서 지나온 시간을 돌아보며 남기는 이야기입니다." />
+    <meta property="og:url" content="https://euoom.github.io/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://euoom.github.io/" />
+    <link rel="alternate" type="application/rss+xml" title="euoom — Blog" href="./feed.xml" />
+    <title>euoom — Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3049332347805104" crossorigin="anonymous"></script>
+    <script defer src="./app.js?v=20261019-1"></script>
   </head>
   <body>
-    <main class="page-shell">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">ETF Portfolio Profiler</p>
-          <h1 id="hero-title">ETF 운용 흐름을 읽기 위한 포트폴리오 변화 분석 서비스</h1>
-          <p>
-            ETF Portfolio Profiler는 ETF 운용사들이 구성종목의 수량, 평가금액, 비중을 어떻게 조정하고 있는지
-            ETF별·종목별로 비교해 보여주는 분석 도구입니다.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-link" href="https://euoom.github.io/etf-portfolio-profiler/">서비스 열기</a>
-            <a class="secondary-link" href="https://euoom.github.io/etf-portfolio-profiler/#/policy">정책 및 고지</a>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="euoom 홈">
+          <span class="brand-mark" aria-hidden="true">e.</span>
+          <span>euoom</span>
+        </a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="./" class="nav-link active">Blog</a>
+          <a href="https://github.com/euoom" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 변경" title="테마 변경">☀</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section id="post-list-view">
+        <div class="hero">
+          <p class="eyebrow">EUOOM'S BLOG</p>
+          <h1>지나간 시간을<br />다시 바라봅니다.</h1>
+          <p class="hero-copy">특별했던 순간은 오래 간직하고, 평범했던 날에서는 미처 발견하지 못한 의미를 찾아봅니다. 개발과 일상 속에서 지나온 시간을 돌아보며 남기는 이야기입니다.</p>
+          <div class="hero-links">
+            <a href="https://github.com/euoom" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://euoom.github.io/etf-portfolio-profiler/" target="_blank" rel="noopener noreferrer">ETF Portfolio Profiler ↗</a>
           </div>
         </div>
+
+        <section class="archive" aria-label="글 목록">
+          <div class="section-heading archive-heading">
+            <div>
+              <p class="eyebrow">ARCHIVE</p>
+              <h2>Notes & Projects</h2>
+            </div>
+            <p id="post-count" class="post-count" aria-live="polite"></p>
+          </div>
+          <div class="controls archive-controls">
+            <label class="search-wrap">
+              <span class="sr-only">글 검색</span>
+              <span aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Search notes..." autocomplete="off" />
+            </label>
+          </div>
+          <section class="archive-group" aria-labelledby="projects-title">
+            <div class="section-heading group-heading">
+              <div><p class="eyebrow">PROJECTS</p><h3 id="projects-title">진행 중인 프로젝트</h3></div>
+              <span id="projects-count" class="post-count"></span>
+            </div>
+            <div id="projects-grid" class="posts-list"></div>
+          </section>
+          <section class="archive-group" aria-labelledby="weekly-title">
+            <div class="section-heading group-heading">
+              <div><p class="eyebrow">WEEKLY NOTES</p><h3 id="weekly-title">주간 회고</h3></div>
+              <span id="weekly-count" class="post-count"></span>
+            </div>
+            <div id="weekly-grid" class="posts-list"></div>
+          </section>
+          <section class="archive-group" aria-labelledby="notes-title">
+            <div class="section-heading group-heading">
+              <div><p class="eyebrow">TECH NOTES</p><h3 id="notes-title">기술 노트</h3></div>
+              <span id="notes-count" class="post-count"></span>
+            </div>
+            <div id="notes-grid" class="posts-list"></div>
+          </section>
+        </section>
       </section>
 
-      <section class="content-section" aria-labelledby="features-title">
-        <h2 id="features-title">제공 기능</h2>
-        <div class="feature-grid">
-          <article>
-            <h3>ETF별 변동 랭킹</h3>
-            <p>최근 영업일 기준으로 구성종목 수량, 금액, 비중 변화가 큰 ETF를 비교합니다.</p>
-          </article>
-          <article>
-            <h3>구성종목 변화 분석</h3>
-            <p>단일 ETF 내부에서 어떤 종목의 편입 비중과 평가금액이 달라졌는지 확인합니다.</p>
-          </article>
-          <article>
-            <h3>종목별 노출 추적</h3>
-            <p>하나의 종목이 여러 ETF에서 어떤 비중으로 편입되어 있고 어떻게 바뀌었는지 살펴봅니다.</p>
-          </article>
-          <article>
-            <h3>AI 화면 해석</h3>
-            <p>현재 화면 데이터 컨텍스트를 바탕으로 ETF와 종목 변화에 대한 요약을 요청할 수 있습니다.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="notice-section" aria-labelledby="notice-title">
-        <h2 id="notice-title">이용 전 안내</h2>
-        <p>
-          이 서비스는 투자 자문이나 매수·매도 추천을 제공하지 않습니다. 데이터와 AI 답변은 부정확할 수 있으며,
-          중요한 판단 전에는 원본 데이터와 공시 자료를 함께 확인해야 합니다.
-        </p>
-      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© <span id="current-year">2026</span> euoom</p>
+      </div>
+    </footer>
   </body>
 </html>
